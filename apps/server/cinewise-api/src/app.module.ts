@@ -17,7 +17,7 @@ import { GenreModule } from './genre/genre.module';
       password: process.env.DB_PW,
       database: process.env.DB_NAME,
       entities: ['dist/**/*.entity{.ts,.js}'],
-      // synchronize: true,
+      synchronize: true,
       logging: true,
       logger: 'debug',
     }),
