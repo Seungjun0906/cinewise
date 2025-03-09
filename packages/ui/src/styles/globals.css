@@ -1,0 +1,33 @@
+@import "tailwindcss";
+@source "../../../../apps/**/*.{ts,tsx}";
+@source "../**/*.{ts,tsx}";
+
+:root {
+  font-size: 10px;
+}
+
+@theme {
+  --color-primary: #d3fc03;
+  --color-secondary: #a632a8;
+
+  --text-1: 1rem;
+  --text-1.5: 1.5rem;
+  --text-2: 2rem;
+  --text-3: 3rem;
+  --text-4: 4rem;
+  --text-5: 5rem;
+  --text-6: 6rem;
+  --text-7: 7rem;
+  --text-8: 8rem;
+  --text-9: 9rem;
+  --text-10: 10rem;
+}
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}

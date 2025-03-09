@@ -1,0 +1,14 @@
+{
+  "monorepo": true,
+  "projects": {
+    "main": {
+      "type": "application",
+      "root": "apps/server/cinewise-api",
+      "entryFile": "main",
+      "sourceRoot": "apps/server/cinewise-api/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/server/cinewise-api/tsconfig.json"
+      }
+    }
+  }
+}
