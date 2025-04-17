@@ -7,7 +7,8 @@
     "lint": "eslint \"**/*.ts*\"",
     "ui:add": "pnpm dlx shadcn-ui@latest add",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
   },
   "publishConfig": {
     "access": "public"
@@ -23,6 +24,7 @@
   "devDependencies": {
     "@chromatic-com/storybook": "^3",
     "@repo/tsconfig": "workspace:^",
+    "@storybook/addon-designs": "^8.2.1",
     "@storybook/addon-essentials": "^8.6.12",
     "@storybook/addon-onboarding": "^8.6.12",
     "@storybook/blocks": "^8.6.12",
@@ -34,6 +36,7 @@
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",
     "autoprefixer": "^10.4.20",
+    "chromatic": "^11.28.0",
     "postcss": "^8.5.1",
     "react": "^19.0.0",
     "storybook": "^8.6.12",
